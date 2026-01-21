@@ -1,4 +1,8 @@
+#pragma once
 
+#include <string>
+
+using namespace std;
 
 
 class MDConverter 
@@ -7,5 +11,7 @@ class MDConverter
     
 
     private:
+        void startHtmlDoc();
 
+        string outputText;
 };
