@@ -1,16 +1,20 @@
-  #include "mdConverter.h"
-  #include <fstream>
-  
-  void FileConverter()
-    
-    {
+#include "mdConverter.h"
+
+MDConverter::MDConverter(){
+
+}
+
+
+void MDConverter::FileConverter()
+{
     ifstream inputFile("markdown-sample.md");
 
     if (!inputFile.is_open()) 
     {
-        cerr << "Error opening file." << endl;
-        return 1;
+        cout << "Error opening file." << endl;
+        return;
     }
 
     ofstream outputFile("output.txt");
-    }
+    cout << "This Ran" << endl;
+}
