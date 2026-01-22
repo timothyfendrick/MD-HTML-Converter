@@ -5,10 +5,12 @@
 #include <fstream>
 
 using namespace std;
+
 int main() 
 {
+    MDConverter test;
 
+    test.FileConverter();
   
-
     return 0;
 }
